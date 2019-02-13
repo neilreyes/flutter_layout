@@ -93,7 +93,6 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     Color color = Theme.of(context).primaryColor;
-
     Widget buttonSection = new Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
