@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'home.dart';
+import 'home_page.dart';
 
 void main(){
   debugPaintSizeEnabled = false;
