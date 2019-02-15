@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
-import 'lake.dart';
 
 class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     void _onPressed(){
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (BuildContext context)=>Lake(),
-        )  
-      );
+      Navigator.pushNamed(context, '/lake');
     }
 
     return new Scaffold(
