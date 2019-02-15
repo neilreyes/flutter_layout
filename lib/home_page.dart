@@ -4,18 +4,29 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void _onPressed(){
-      Navigator.pushNamed(context, '/lake');
-    }
 
     return new Scaffold(
         appBar: AppBar(
           title: Text("Home"),
         ),
         body: Center(
-          child: RaisedButton(
-              onPressed: _onPressed,
-              child: Text('Oeschinen Lake Campground'),  
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              RaisedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, '/lake');
+                },
+                child: Text('Oeschinen Lake Campground'),  
+              ),
+              RaisedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, '/rdata');
+                },
+                child: Text('Returned Data Excercise'),  
+              )
+            ],
           ),
         ),
       );
