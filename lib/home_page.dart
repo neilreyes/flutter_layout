@@ -29,6 +29,27 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(
+                child: Text("Draw Header"),
+              ),
+              ListTile(
+                onTap: (){
+                  Navigator.popAndPushNamed(context, '/lake');
+                },
+                title: Text('Lake'),
+              ),
+              ListTile(
+                onTap: (){
+                  Navigator.popAndPushNamed(context, '/rdata');
+                },
+                title: Text('Return Data Excercise'),
+              )
+            ],
+          ),
+        ),
       );
   }
 
