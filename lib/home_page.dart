@@ -33,7 +33,12 @@ class HomePage extends StatelessWidget {
           child: ListView(
             children: <Widget>[
               DrawerHeader(
-                child: Text("Draw Header"),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                ),
+                child: Text(
+                  "Draw Header"
+                ),
               ),
               ListTile(
                 onTap: (){
@@ -46,6 +51,12 @@ class HomePage extends StatelessWidget {
                   Navigator.popAndPushNamed(context, '/rdata');
                 },
                 title: Text('Return Data Excercise'),
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.popAndPushNamed(context, '/animation');
+                },
+                title: Text('Animation Excercise'),
               )
             ],
           ),
